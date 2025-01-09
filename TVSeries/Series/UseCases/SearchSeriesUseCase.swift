@@ -5,6 +5,7 @@
 //  Created by Matheus Campos on 08/01/25.
 //
 
+/// Use case to search TV series from a query.
 final class SearchSeriesUseCase {
     // MARK: - Private Properties
     private let networkService: NetworkServiceProtocol

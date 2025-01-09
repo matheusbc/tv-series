@@ -6,6 +6,7 @@
 //
 import Foundation
 
+/// Endpoints related to Episodes.
 enum EpisodesEndpoints {
     case getSeriesEpisodes(id: Int)
     case getEpisode(seriesId: Int, season: Int, episode: Int)

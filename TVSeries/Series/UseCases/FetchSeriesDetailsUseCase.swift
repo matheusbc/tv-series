@@ -5,6 +5,7 @@
 //  Created by Matheus Campos on 08/01/25.
 //
 
+/// Use case to fetch a TV Series.
 final class FetchSeriesDetailsUseCase {
     // MARK: - Private Properties
     private let networkService: NetworkServiceProtocol

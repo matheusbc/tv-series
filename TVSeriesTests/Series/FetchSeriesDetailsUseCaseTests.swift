@@ -8,18 +8,19 @@ import Testing
 import Foundation
 @testable import TVSeries
 
-// MARK: - Test Suite Configuration
 @Suite("Fetch Series Details Use Case Tests")
 struct FetchSeriesDetailsUseCaseTests {
-    var service: NetworkServiceProtocol!
-    var mockService: MockNetworkService!
+    // MARK: - Private properties
+    private var service: NetworkServiceProtocol!
+    private var mockService: MockNetworkService!
 
+    // MARK: - Initializers (setup)
     init() async throws {
         service = NetworkService()
         mockService = MockNetworkService()
     }
 
-    // MARK: - Use Case Tests
+    // MARK: - Tests
     @Test("Use case successfully executes series details fetch")
     func testUseCaseSuccess() async throws {
         // Given

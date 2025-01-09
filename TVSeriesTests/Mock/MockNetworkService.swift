@@ -27,6 +27,7 @@ class MockNetworkService: NetworkServiceProtocol {
     }
 }
 
+// Implementing Equatable because it's necessary for testing Network errors.
 extension NetworkError: @retroactive Equatable {
     public static func == (lhs: NetworkError, rhs: NetworkError) -> Bool {
         lhs.localizedDescription == rhs.localizedDescription

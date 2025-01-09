@@ -6,6 +6,7 @@
 //
 import Foundation
 
+/// Endpoints related to TV Series.
 enum SeriesEndpoints {
     case getSeriesList(page: Int)
     case searchSeries(query: String)

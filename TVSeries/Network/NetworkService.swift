@@ -44,7 +44,7 @@ final class NetworkService: NetworkServiceProtocol {
                 throw NetworkError.invalidResponse
             }
 
-            // If necessary, we can handle the other server code errors.
+            // Handling only 404 that will be used on this app version.
             guard successCodes.contains(httpResponse.statusCode) else {
                 if httpResponse.statusCode == 404 {
                     throw NetworkError.notFound

@@ -22,6 +22,6 @@ struct MockSeries {
         ]
         let summary = "Under the Dome is the story of a small town that is suddenly..."
         let schedule = Schedule(time: "22:00", days: ["Thursday"])
-        return Series(name: "Mock Series", image: image, genres: genres, summary: summary, schedule: schedule)
+        return Series(name: name, image: image, genres: genres, summary: summary, schedule: schedule)
     }
 }
