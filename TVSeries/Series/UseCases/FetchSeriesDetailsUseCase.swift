@@ -17,11 +17,11 @@ final class FetchSeriesDetailsUseCase {
 }
 
 protocol FetchSeriesDetailsUseCaseProtocol {
-    func execute(seriesId: Int) async throws -> Series
+    func execute(seriesId: Int) async throws -> SeriesDTO
 }
 
 extension FetchSeriesDetailsUseCase: FetchSeriesDetailsUseCaseProtocol {
-    func execute(seriesId: Int) async throws -> Series {
+    func execute(seriesId: Int) async throws -> SeriesDTO {
         try await networkService.request(SeriesEndpoints.getSeries(id: seriesId))
     }
 }

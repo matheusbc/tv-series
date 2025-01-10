@@ -21,7 +21,7 @@ struct SeriesListView: View {
                 }
                 Spacer()
             } else {
-                List(self.viewModel.series) { series in
+                List(self.viewModel.filteredSeries) { series in
                     SeriesCardView(series: series)
                     if self.viewModel.hasNextPage && self.viewModel.series.last?.id == series.id {
                         ProgressView()
@@ -35,6 +35,7 @@ struct SeriesListView: View {
                 .refreshable {
                     await viewModel.refreshSeries()
                 }
+                .searchable(text: self.$viewModel.searchText)
             }
         }
         .task {

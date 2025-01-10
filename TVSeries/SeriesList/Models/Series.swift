@@ -8,7 +8,7 @@
 struct Series: Decodable, Identifiable {
     let id: Int
     let name: String
-    let image: SeriesImage?
+    let image: String
     let genres: [String]
     let summary: String
     let schedule: Schedule
