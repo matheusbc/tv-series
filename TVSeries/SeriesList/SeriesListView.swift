@@ -22,7 +22,9 @@ struct SeriesListView: View {
                 Spacer()
             } else {
                 List(self.viewModel.filteredSeries) { series in
-                    SeriesCardView(series: series)
+                    NavigationLink(destination: SeriesDetailsView(series: series)) {
+                        SeriesCardView(series: series)
+                    }
                     if self.viewModel.hasNextPage && self.viewModel.series.last?.id == series.id {
                         ProgressView()
                             .frame(minWidth: 0, maxWidth: .infinity)
