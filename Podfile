@@ -6,6 +6,7 @@ target 'TVSeries' do
   use_frameworks!
 
   # Pods for TVSeries
+  pod 'Kingfisher', '~> 8.0'
 
   target 'TVSeriesTests' do
     inherit! :search_paths
