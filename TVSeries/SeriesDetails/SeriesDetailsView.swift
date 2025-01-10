@@ -8,17 +8,16 @@ import SwiftUI
 import Kingfisher
 
 struct SeriesDetailsView: View {
-    @StateObject var viewModel: SeriesListViewModel = SeriesListViewModel()
     @State var series: Series
-    @State var titleVisible: Bool = false
+    @Binding var title: String
 
     var body: some View {
         ScrollView {
-            LazyVStack(alignment: .leading) {
+            VStack(alignment: .leading) {
                 Text(series.name)
                     .font(.largeTitle.bold())
                     .onScrollVisibilityChange { isVisible in
-                        titleVisible = isVisible
+                        title = isVisible ? "" : series.name
                     }
                 HStack(alignment: .top) {
                     KFImage(URL(string: series.image))
@@ -46,9 +45,12 @@ struct SeriesDetailsView: View {
             .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
             .padding(.horizontal)
         }
-        .toolbarRole(.editor)
-        .navigationBarTitleDisplayMode(.inline)
-        .navigationTitle(titleVisible ? "" : series.name)
+        .onAppear {
+            title = ""
+        }
+        .onDisappear {
+            title = series.name
+        }
     }
 }
 
@@ -60,6 +62,6 @@ struct SeriesDetailsView: View {
                         summary: "A really funny series.",
                         schedule: Schedule(time: "10:00", days: ["Monday", "Wednesday"]))
     NavigationView {
-        SeriesDetailsView(series: series)
+        SeriesDetailsView(series: series, title: .constant(""))
     }
 }

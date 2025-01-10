@@ -13,16 +13,13 @@ struct SeriesListView: View {
         VStack {
             if viewModel.hasError {
                 Spacer()
-                Text("Something went wrong")
-                Button("Retry") {
-                    Task {
-                        await viewModel.refreshSeries()
-                    }
+                ListLoadingErrorView {
+                    await viewModel.refreshSeries()
                 }
                 Spacer()
             } else {
                 List(self.viewModel.filteredSeries) { series in
-                    NavigationLink(destination: SeriesDetailsView(series: series)) {
+                    NavigationLink(destination: SeriesInfoView(series: series)) {
                         SeriesCardView(series: series)
                     }
                     if self.viewModel.hasNextPage && self.viewModel.series.last?.id == series.id {

@@ -11,17 +11,17 @@ final class FetchEpisodeUseCase {
     private let networkService: NetworkServiceProtocol
 
     // MARK: - Initializers
-    public init(networkService: NetworkServiceProtocol) {
+    public init(networkService: NetworkServiceProtocol = NetworkService()) {
         self.networkService = networkService
     }
 }
 
 protocol FetchEpisodeUseCaseProtocol {
-    func execute(seriesId: Int, season: Int, episode: Int) async throws -> Episode
+    func execute(seriesId: Int, season: Int, episode: Int) async throws -> EpisodeDTO
 }
 
 extension FetchEpisodeUseCase: FetchEpisodeUseCaseProtocol {
-    func execute(seriesId: Int, season: Int, episode: Int) async throws -> Episode {
+    func execute(seriesId: Int, season: Int, episode: Int) async throws -> EpisodeDTO {
         try await networkService.request(EpisodesEndpoints.getEpisode(seriesId: seriesId,
                                                                       season: season,
                                                                       episode: episode))

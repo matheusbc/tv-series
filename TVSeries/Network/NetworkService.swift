@@ -14,21 +14,24 @@ final class NetworkService: NetworkServiceProtocol {
     private let successCodes = 200...299
     private let session: URLSession
     private let decoder: JSONDecoder
+    private let retries: Int
 
     /// NetworkService initializer.
     /// - Parameters:
     ///   - session: URLSession to be used on network requests. Default is URLSession.shared.
     ///   - decoder: Decoder used to decode request response data. Default is JSONDecoder.
     init(session: URLSession = URLSession.shared,
-         decoder: JSONDecoder = JSONDecoder()) {
+         decoder: JSONDecoder = JSONDecoder(),
+         retries: Int = 3) {
         self.session = session
         self.decoder = decoder
+        self.retries = retries
     }
 
     /// Send request to the given endpoint. This function works asynchronously.
     /// - Parameter endpoint: Endpoint to be requested that conforms to EndpointProtocol.
     /// - Returns: Returns data that conforms to Decodable.
-    func request<T: Decodable>(_ endpoint: EndpointProtocol) async throws -> T {
+    func request<T: Decodable>(_ endpoint: EndpointProtocol, retries: Int = 3) async throws -> T {
         guard let url = URL(string: Endpoints.baseURL + endpoint.path) else {
             throw NetworkError.invalidURL
         }
@@ -54,9 +57,19 @@ final class NetworkService: NetworkServiceProtocol {
 
             return try decoder.decode(T.self, from: data)
         } catch let error as DecodingError {
+            print(error)
             throw NetworkError.decodingError(error)
         } catch {
+            print(error)
+            guard retries == 0 else {
+                let test: T = try await self.request(endpoint, retries: retries - 1)
+                return test
+            }
             throw NetworkError.networkError(error)
         }
+    }
+
+    func request<T: Decodable>(_ endpoint: EndpointProtocol) async throws -> T {
+        try await request(endpoint, retries: self.retries)
     }
 }

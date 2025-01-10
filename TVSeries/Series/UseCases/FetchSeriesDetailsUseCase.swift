@@ -11,7 +11,7 @@ final class FetchSeriesDetailsUseCase {
     private let networkService: NetworkServiceProtocol
 
     // MARK: - Initializers
-    public init(networkService: NetworkServiceProtocol) {
+    public init(networkService: NetworkServiceProtocol = NetworkService()) {
         self.networkService = networkService
     }
 }
