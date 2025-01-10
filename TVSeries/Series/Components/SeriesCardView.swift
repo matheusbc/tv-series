@@ -12,7 +12,7 @@ struct SeriesCardView: View {
 
     var body: some View {
         HStack(alignment: .center) {
-            KFImage(URL(string: series?.image?.medium ?? ""))
+            KFImage(URL(string: series?.image ?? ""))
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 60)
@@ -35,22 +35,19 @@ struct SeriesCardView: View {
     let series = [
         Series(id: 1,
                name: "Serie 1",
-               image: SeriesImage(medium: "https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg",
-                                  original: "https://static.tvmaze.com/uploads/images/medium_landscape/1/4388.jpg"),
+               image: "https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg",
                genres: ["Commedy"],
                summary: "A really funny series.",
                schedule: Schedule(time: "10:00", days: ["Monday", "Wednesday"])),
         Series(id: 2,
                name: "Serie 2",
-               image: SeriesImage(medium: "https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg",
-                                  original: "https://static.tvmaze.com/uploads/images/medium_landscape/1/4388.jpg"),
+               image: "https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg",
                genres: ["Commedy", "Drama"],
                summary: "A really funny series.",
                schedule: Schedule(time: "10:00", days: ["Monday", "Wednesday"])),
         Series(id: 3,
                name: "Serie 3 with a very large title that will not fit in the screen",
-               image: SeriesImage(medium: "https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg",
-                                  original: "https://static.tvmaze.com/uploads/images/medium_landscape/1/4388.jpg"),
+               image: "https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg",
                genres: ["Commedy", "Drama", "Science-Fiction", "Thriller", "Action"],
                summary: "A really funny series. A really funny series. A really funny series. A really funny series.",
                schedule: Schedule(time: "10:00", days: ["Monday", "Wednesday"]))

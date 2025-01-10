@@ -11,17 +11,17 @@ final class SearchSeriesUseCase {
     private let networkService: NetworkServiceProtocol
 
     // MARK: - Initializers
-    public init(networkService: NetworkServiceProtocol) {
+    public init(networkService: NetworkServiceProtocol = NetworkService()) {
         self.networkService = networkService
     }
 }
 
 protocol SearchSeriesUseCaseProtocol {
-    func execute(query: String) async throws -> [Series]
+    func execute(query: String) async throws -> [SearchSeriesDTO]
 }
 
 extension SearchSeriesUseCase: SearchSeriesUseCaseProtocol {
-    func execute(query: String = "") async throws -> [Series] {
+    func execute(query: String = "") async throws -> [SearchSeriesDTO] {
         try await networkService.request(SeriesEndpoints.searchSeries(query: query))
     }
 }
