@@ -1,6 +1,16 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "Genres" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gêneros"
+          }
+        }
+      }
+    },
     "Retry" : {
       "localizations" : {
         "pt-BR" : {
@@ -11,12 +21,32 @@
         }
       }
     },
+    "Schedule" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agenda"
+          }
+        }
+      }
+    },
     "Something went wrong" : {
       "localizations" : {
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Algo deu errado"
+          }
+        }
+      }
+    },
+    "Summary" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resumo"
           }
         }
       }

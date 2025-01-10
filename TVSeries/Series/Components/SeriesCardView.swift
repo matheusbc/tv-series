@@ -22,9 +22,6 @@ struct SeriesCardView: View {
                     .lineLimit(1)
                 Text(series?.genres.joined(separator: ", ") ?? "")
                     .font(.subheadline)
-                    .lineLimit(1)
-                Text(series?.summary ?? "")
-                    .font(.footnote)
                     .lineLimit(2)
             }
         }
