@@ -11,7 +11,6 @@ protocol SeriesListViewModelProtocol: ObservableObject {
     var series: [Series] { get }
     var filteredSeries: [Series] { get }
     var searchText: String { get set }
-    var error: Error? { get }
     var hasNextPage: Bool { get }
     var hasError: Bool { get }
     func refreshSeries() async
@@ -22,7 +21,6 @@ class SeriesListViewModel: SeriesListViewModelProtocol {
     @Published var series: [Series] = []
     @Published var filteredSeries: [Series] = []
     @Published var searchText: String = ""
-    @Published var error: Error?
     @Published var hasNextPage: Bool = true
     @Published var hasError: Bool = false
 

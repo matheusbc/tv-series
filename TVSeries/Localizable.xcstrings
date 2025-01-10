@@ -1,6 +1,21 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
+
+    },
+    " - " : {
+
+    },
+    "-" : {
+
+    },
+    "Episode %lld" : {
+
+    },
+    "Episodes" : {
+
+    },
     "Genres" : {
       "localizations" : {
         "pt-BR" : {
@@ -10,6 +25,9 @@
           }
         }
       }
+    },
+    "Info" : {
+
     },
     "Retry" : {
       "localizations" : {
@@ -30,6 +48,9 @@
           }
         }
       }
+    },
+    "Season %lld" : {
+
     },
     "Something went wrong" : {
       "localizations" : {
