@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  TVSeries
-//
-//  Created by Matheus Campos on 07/01/25.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -17,8 +10,4 @@ struct ContentView: View {
         }
         .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }

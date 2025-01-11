@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		786CF9CF3E7F0359F89649A6 /* Pods_TVSeries_TVSeriesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AA2E7307B0A9B9DA355FC1 /* Pods_TVSeries_TVSeriesUITests.framework */; };
+		7A58DA321D1763BC823800AE /* Pods_TVSeriesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10F11D75E9A4FA6AD23439F /* Pods_TVSeriesTests.framework */; };
+		BBEB75124DDD1DB9EC946497 /* Pods_TVSeries.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B4388525851F63182D7F41 /* Pods_TVSeries.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A4EC1C6A2D2D7F0200E3C1D5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,17 +30,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00B4408B4E83BF505B390387 /* Pods-TVSeries.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVSeries.debug.xcconfig"; path = "Target Support Files/Pods-TVSeries/Pods-TVSeries.debug.xcconfig"; sourceTree = "<group>"; };
+		18AD8271887CD0E5DD382E0D /* Pods-TVSeriesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVSeriesTests.debug.xcconfig"; path = "Target Support Files/Pods-TVSeriesTests/Pods-TVSeriesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		470A9732C4A9230EFB1618B0 /* Pods-TVSeries-TVSeriesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVSeries-TVSeriesUITests.debug.xcconfig"; path = "Target Support Files/Pods-TVSeries-TVSeriesUITests/Pods-TVSeries-TVSeriesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		65AA2E7307B0A9B9DA355FC1 /* Pods_TVSeries_TVSeriesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVSeries_TVSeriesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93D5D6B1DAEEA23A5581E7A8 /* Pods-TVSeries.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVSeries.release.xcconfig"; path = "Target Support Files/Pods-TVSeries/Pods-TVSeries.release.xcconfig"; sourceTree = "<group>"; };
+		A10F11D75E9A4FA6AD23439F /* Pods_TVSeriesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVSeriesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4EC1C592D2D7F0000E3C1D5 /* TVSeries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVSeries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4EC1C692D2D7F0200E3C1D5 /* TVSeriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVSeriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4EC1C732D2D7F0200E3C1D5 /* TVSeriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVSeriesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA887E27D59CF9CF39458AC1 /* Pods-TVSeriesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVSeriesTests.release.xcconfig"; path = "Target Support Files/Pods-TVSeriesTests/Pods-TVSeriesTests.release.xcconfig"; sourceTree = "<group>"; };
+		C3B4388525851F63182D7F41 /* Pods_TVSeries.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVSeries.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5DC4A9C989C9CAF1CDF9B1A /* Pods-TVSeries-TVSeriesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVSeries-TVSeriesUITests.release.xcconfig"; path = "Target Support Files/Pods-TVSeries-TVSeriesUITests/Pods-TVSeries-TVSeriesUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		A4EC1C5B2D2D7F0000E3C1D5 /* TVSeries */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TVSeries;
-			sourceTree = "<group>";
-		};
 		A4EC1C6C2D2D7F0200E3C1D5 /* TVSeriesTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = TVSeriesTests;
@@ -45,6 +55,11 @@
 			path = TVSeriesUITests;
 			sourceTree = "<group>";
 		};
+		A4EC1CB42D2D8ED900E3C1D5 /* TVSeries */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TVSeries;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBEB75124DDD1DB9EC946497 /* Pods_TVSeries.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A58DA321D1763BC823800AE /* Pods_TVSeriesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,19 +83,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				786CF9CF3E7F0359F89649A6 /* Pods_TVSeries_TVSeriesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27290472C5ED1828256E62FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00B4408B4E83BF505B390387 /* Pods-TVSeries.debug.xcconfig */,
+				93D5D6B1DAEEA23A5581E7A8 /* Pods-TVSeries.release.xcconfig */,
+				470A9732C4A9230EFB1618B0 /* Pods-TVSeries-TVSeriesUITests.debug.xcconfig */,
+				D5DC4A9C989C9CAF1CDF9B1A /* Pods-TVSeries-TVSeriesUITests.release.xcconfig */,
+				18AD8271887CD0E5DD382E0D /* Pods-TVSeriesTests.debug.xcconfig */,
+				BA887E27D59CF9CF39458AC1 /* Pods-TVSeriesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8BD6A806976FB72A6E8899E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3B4388525851F63182D7F41 /* Pods_TVSeries.framework */,
+				65AA2E7307B0A9B9DA355FC1 /* Pods_TVSeries_TVSeriesUITests.framework */,
+				A10F11D75E9A4FA6AD23439F /* Pods_TVSeriesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A4EC1C502D2D7F0000E3C1D5 = {
 			isa = PBXGroup;
 			children = (
-				A4EC1C5B2D2D7F0000E3C1D5 /* TVSeries */,
+				A4EC1CB42D2D8ED900E3C1D5 /* TVSeries */,
 				A4EC1C6C2D2D7F0200E3C1D5 /* TVSeriesTests */,
 				A4EC1C762D2D7F0200E3C1D5 /* TVSeriesUITests */,
 				A4EC1C5A2D2D7F0000E3C1D5 /* Products */,
+				27290472C5ED1828256E62FD /* Pods */,
+				8BD6A806976FB72A6E8899E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,20 +142,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4EC1C7D2D2D7F0200E3C1D5 /* Build configuration list for PBXNativeTarget "TVSeries" */;
 			buildPhases = (
+				F19E4BE45B2BBC86CAD7ED3D /* [CP] Check Pods Manifest.lock */,
 				A4EC1C552D2D7F0000E3C1D5 /* Sources */,
 				A4EC1C562D2D7F0000E3C1D5 /* Frameworks */,
 				A4EC1C572D2D7F0000E3C1D5 /* Resources */,
+				387FEA06BF27C80657600BEF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				A4EC1C5B2D2D7F0000E3C1D5 /* TVSeries */,
+				A4EC1CB42D2D8ED900E3C1D5 /* TVSeries */,
 			);
 			name = TVSeries;
-			packageProductDependencies = (
-			);
 			productName = TVSeries;
 			productReference = A4EC1C592D2D7F0000E3C1D5 /* TVSeries.app */;
 			productType = "com.apple.product-type.application";
@@ -121,6 +164,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4EC1C802D2D7F0200E3C1D5 /* Build configuration list for PBXNativeTarget "TVSeriesTests" */;
 			buildPhases = (
+				D7F2F58EDDF12027070DA55F /* [CP] Check Pods Manifest.lock */,
 				A4EC1C652D2D7F0200E3C1D5 /* Sources */,
 				A4EC1C662D2D7F0200E3C1D5 /* Frameworks */,
 				A4EC1C672D2D7F0200E3C1D5 /* Resources */,
@@ -134,8 +178,6 @@
 				A4EC1C6C2D2D7F0200E3C1D5 /* TVSeriesTests */,
 			);
 			name = TVSeriesTests;
-			packageProductDependencies = (
-			);
 			productName = TVSeriesTests;
 			productReference = A4EC1C692D2D7F0200E3C1D5 /* TVSeriesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -144,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4EC1C832D2D7F0200E3C1D5 /* Build configuration list for PBXNativeTarget "TVSeriesUITests" */;
 			buildPhases = (
+				745F6ED43867A68E0C705EE2 /* [CP] Check Pods Manifest.lock */,
 				A4EC1C6F2D2D7F0200E3C1D5 /* Sources */,
 				A4EC1C702D2D7F0200E3C1D5 /* Frameworks */,
 				A4EC1C712D2D7F0200E3C1D5 /* Resources */,
+				0AADFA06D376485CB3C088DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,8 +201,6 @@
 				A4EC1C762D2D7F0200E3C1D5 /* TVSeriesUITests */,
 			);
 			name = TVSeriesUITests;
-			packageProductDependencies = (
-			);
 			productName = TVSeriesUITests;
 			productReference = A4EC1C732D2D7F0200E3C1D5 /* TVSeriesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -192,6 +234,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = A4EC1C502D2D7F0000E3C1D5;
 			minimizedProjectReferenceProxies = 1;
@@ -230,6 +273,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AADFA06D376485CB3C088DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TVSeries-TVSeriesUITests/Pods-TVSeries-TVSeriesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TVSeries-TVSeriesUITests/Pods-TVSeries-TVSeriesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TVSeries-TVSeriesUITests/Pods-TVSeries-TVSeriesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		387FEA06BF27C80657600BEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TVSeries/Pods-TVSeries-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TVSeries/Pods-TVSeries-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TVSeries/Pods-TVSeries-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		745F6ED43867A68E0C705EE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TVSeries-TVSeriesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7F2F58EDDF12027070DA55F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TVSeriesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F19E4BE45B2BBC86CAD7ED3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TVSeries-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A4EC1C552D2D7F0000E3C1D5 /* Sources */ = {
@@ -306,7 +452,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -328,6 +474,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -369,7 +516,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -384,12 +531,14 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		A4EC1C7E2D2D7F0200E3C1D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00B4408B4E83BF505B390387 /* Pods-TVSeries.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -419,6 +568,7 @@
 		};
 		A4EC1C7F2D2D7F0200E3C1D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93D5D6B1DAEEA23A5581E7A8 /* Pods-TVSeries.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -448,6 +598,7 @@
 		};
 		A4EC1C812D2D7F0200E3C1D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18AD8271887CD0E5DD382E0D /* Pods-TVSeriesTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -467,6 +618,7 @@
 		};
 		A4EC1C822D2D7F0200E3C1D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA887E27D59CF9CF39458AC1 /* Pods-TVSeriesTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -486,6 +638,7 @@
 		};
 		A4EC1C842D2D7F0200E3C1D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 470A9732C4A9230EFB1618B0 /* Pods-TVSeries-TVSeriesUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -503,6 +656,7 @@
 		};
 		A4EC1C852D2D7F0200E3C1D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5DC4A9C989C9CAF1CDF9B1A /* Pods-TVSeries-TVSeriesUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
